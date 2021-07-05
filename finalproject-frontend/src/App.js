@@ -1,15 +1,16 @@
 import './App.css';
 import React from "react";
 import{Link, Route} from "react-router-dom";
+import Home from './components/Home';
+import SignUp from './components/SignUp';
 
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1>Welcome to the XRC!</h1>
-        <h4>Ex-Jehovah's Witness Resource Center</h4>
-      </div>
+      <Route path="/" exact render={() => <Home /> } />
+      <Route path="/signup" render={(props) => <SignUp {...props} /> } />
+      <Route path="/login" render={(props) => <Login {...props} /> } />
     </div>
   );
 }
