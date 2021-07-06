@@ -43,8 +43,8 @@ class SignUp extends Component {
                     <input onChange={this.handleChange} type="text" name="username" placeholder="Enter Username"/>
                     <input onChange={this.handleChange} type="password" name="password" placeholder="Enter Password"/>
                     <input onChange={this.handleChange} type="text" name="email" placeholder="Enter Email" />
-                    <input onChange={this.handleChange} type="text" name="jw status" placeholder="Enter JW Status" />
-                    <input onChange={this.handleChange} type="textarea" name="topic" placeholder="Enter Topics Here" />
+                    <input onChange={this.handleChange} type="text" name="jwStatus" placeholder="Enter JW Status" />
+                    <textarea onChange={this.handleChange} rows="5" cols="40" name="topic" placeholder="Enter Topics Here"></textarea>
                     <input type="submit" value="Sign Up" />
                 </form>
             </div>
