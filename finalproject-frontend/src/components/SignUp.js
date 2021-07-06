@@ -31,7 +31,7 @@ class SignUp extends Component {
         axios.post("http://localhost:3001/users/signup", this.state.user)
             .then(response => {
                 console.log(response)
-                this.props.history.push(`/profile/${response.data.use.id}`)
+                this.props.history.push(`/profile/${response.data.id}`)
             })
     }
 
