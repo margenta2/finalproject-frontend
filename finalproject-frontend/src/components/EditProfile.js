@@ -9,7 +9,7 @@ const EditProfile = (props) => {
                 <input onChange={props.handleChange} type="text" name="email" value={props.user.email} />
                 <input onChange={props.handleChange} type="text" name="jwStatus" value={props.user.jwStatus} />
                 <input onChange={props.handleChange} type="text" name="topic" value={props.user.topic} />
-                <input type="submit" value="Edit Post" />
+                <input type="submit" value="Submit" />
             </form>
             <button onClick={props.handleDelete}>Delete Profile</button>
         </div>

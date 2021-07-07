@@ -12,6 +12,7 @@ const Home = () => {
             <div>
                 <Link to="/login"><h3>Log In</h3></Link>
                 <Link to="/signup"><h3>Sign Up</h3></Link>
+                <Link to="/posts"><h3>Message Board</h3></Link>
             </div>
         </div>
     )

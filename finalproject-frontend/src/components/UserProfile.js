@@ -40,7 +40,7 @@ class UserProfile extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
 
-        axios.put(`http://localhost:3001/users/profile/${this.props.match.params.id}`)
+        axios.put(`http://localhost:3001/users/profile/${this.props.match.params.id}`,this.state.user)
             .then(response => 
                 console.log("Making Changes"))
     }

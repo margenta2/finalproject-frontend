@@ -5,10 +5,10 @@ const EditPost = (props) => {
         <div>
             <form onSubmit={props.handleSubmit}>
                 <input onChange={props.handleChange} type="text" name="subject" value={props.post.subject}/>
-                <input onChange={props.handleChange} type="texst" name="content" value={props.post.content}/>
+                <input onChange={props.handleChange} type="text" name="content" value={props.post.content}/>
                 <input type="submit" value="Edit Post"/>
             </form>
-            <button onClick={props.handleDelete}>Delete City</button>
+            <button onClick={props.handleDelete}>Delete Post</button>
         </div>
         
     )

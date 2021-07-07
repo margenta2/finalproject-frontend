@@ -35,7 +35,7 @@ class OnePost extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
 
-        axios.put(`http://localhost:3001/posts/${this.props.match.params.id}`)
+        axios.put(`http://localhost:3001/posts/${this.props.match.params.id}`,this.state.post)
         .then(response => {
             console.log("editing")
         })
@@ -52,7 +52,7 @@ class OnePost extends Component {
     }
 
     render() {
-        const post = this.post.city
+        const post = this.state.post
         return (
             <div>
                 <h5>{post.subject}</h5>
@@ -68,4 +68,4 @@ class OnePost extends Component {
     }
 }
 
-export default OnePost
+export default OnePost;
