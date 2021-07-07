@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import EditProfile from "./EditProfile";
 
 
 class UserProfile extends Component {
@@ -67,7 +68,12 @@ class UserProfile extends Component {
                     <h2>Topic to Discuss: {user.topic}</h2>
                 </form>
                 <div>
-
+                    <EditProfile
+                    user={this.state.user}
+                    handleChange={this.handleChange}
+                    handleSubmit={this.handleSubmit}
+                    handleDelete={this.handleDelete}
+                    />
                 </div>
             </div>
         )
