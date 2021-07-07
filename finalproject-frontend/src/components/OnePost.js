@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import EditPost from "./EditPost";
 
 class OnePost extends Component {
     constructor(props) {
@@ -56,6 +57,12 @@ class OnePost extends Component {
             <div>
                 <h5>{post.subject}</h5>
                 <p>{post.content}</p>
+                <EditPost
+                post={post}
+                handleChange={this.handleChange}
+                handleSubmit={this.handleSubmit}
+                handleDelete={this.handleDelete}
+                />
             </div>
         )
     }

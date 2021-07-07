@@ -14,6 +14,7 @@ function App() {
       <Route path="/signup" render={(props) => <SignUp {...props} /> } />
       <Route path="/login" render={(props) => <Login {...props} /> } />
       <Route path="/profile/:id" render={(props) => <UserProfile {...props} /> } />
+      <Route path="/posts" exact render=
     </div>
   );
 }
