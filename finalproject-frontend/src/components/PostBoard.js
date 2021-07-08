@@ -26,14 +26,17 @@ class PostBoard extends Component {
         return (
             <div>
                 <h1>Message Board</h1>
+                <Link to={`posts/create`}>Create New Post</Link>
                 {this.state.posts.map(post => {
                     return (
-                        <Link to={`/posts/${post.id}`}>
-                            <div>
-                                <h4>{post.subject}</h4>
-                                <p>{post.content}</p>
-                            </div>
-                        </Link>
+                        <div>
+                            <Link to={`/posts/post/${post.id}`}>
+                                <div>
+                                    <h4>{post.subject}</h4>
+                                    <p>{post.content}</p>
+                                </div>
+                            </Link>
+                        </div>
                     )
                 })}
             </div>

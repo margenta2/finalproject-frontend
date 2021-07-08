@@ -7,6 +7,7 @@ import Login from './components/Login';
 import UserProfile from './components/UserProfile';
 import PostBoard from './components/PostBoard';
 import OnePost from './components/OnePost';
+import CreatePost from './components/CreatePost';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Route path="/login" render={(props) => <Login {...props} /> } />
       <Route path="/profile/:id" render={(props) => <UserProfile {...props} /> } />
       <Route path="/posts" exact render={() => <PostBoard /> } />
-      <Route path="/posts/:id" render={(props) => <OnePost {...props} /> } />
+      <Route path="/posts/post/:id" render={(props) => <OnePost {...props} /> } />
+      <Route path="/posts/create" exact render={(props) => <CreatePost {...props} /> } />
     </div>
   );
 }
