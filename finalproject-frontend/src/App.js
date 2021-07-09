@@ -8,6 +8,13 @@ import UserProfile from './components/UserProfile';
 import PostBoard from './components/PostBoard';
 import OnePost from './components/OnePost';
 import CreatePost from './components/CreatePost';
+import MentalHealth from './components/MentalHealth';
+import SocialSupport from './components/SocialSupport';
+import Beliefs from './components/Beliefs';
+import DeProgram from './components/DeProgram';
+import Glossary from './components/Glossary';
+import Humor from './components/Humor';
+import Statistics from './components/Statistics';
 
 
 function App() {
@@ -20,6 +27,14 @@ function App() {
       <Route path="/posts" exact render={() => <PostBoard /> } />
       <Route path="/posts/post/:id" render={(props) => <OnePost {...props} /> } />
       <Route path="/posts/create" exact render={(props) => <CreatePost {...props} /> } />
+      <Route path="/beliefs" render={() => <Beliefs /> } />
+      <Route path="/deprogram" render={() => <DeProgram /> } />
+      <Route path="/glossary" render={() => <Glossary /> } />
+      <Route path="/humor" render={() => <Humor/> } />
+      <Route path="/mentalhealth" render={() => <MentalHealth /> } />
+      <Route path="/socialsupport" render={() => <SocialSupport /> } />
+      <Route path="/statistics" render={() => <Statistics /> } />
+      
     </div>
   );
 }
