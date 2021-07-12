@@ -5,7 +5,7 @@ const MentalHealth = () => {
     return (
         <div>
             <div  className="navbar">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
                 <Link to="/posts">Message Board</Link>
                 <div className="dropdown">
                     <button className="dropbtn">Menu
