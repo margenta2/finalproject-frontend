@@ -15,6 +15,7 @@ import DeProgram from './components/DeProgram';
 import Glossary from './components/Glossary';
 import Humor from './components/Humor';
 import Statistics from './components/Statistics';
+import About from './components/About';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path="/mentalhealth" render={() => <MentalHealth /> } />
       <Route path="/socialsupport" render={() => <SocialSupport /> } />
       <Route path="/statistics" render={() => <Statistics /> } />
+      <Route path="/about" render={() => <About /> } />
       
     </div>
   );
