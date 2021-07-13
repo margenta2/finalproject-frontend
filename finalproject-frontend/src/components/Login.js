@@ -41,22 +41,8 @@ class Login extends Component {
             <div>
                 <div  className="navbar">
                 <Link to="/">Home</Link>
-                <Link to="/posts">Message Board</Link>
-                <div className="dropdown">
-                    <button className="dropbtn">Menu
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <Link to="/about">About</Link>
-                        <Link to="/beliefs">Beliefs</Link>
-                        <Link to="/deprogram">De-Programming</Link>
-                        <Link to="/mentalhealth">Mental Health</Link>
-                        <Link to="/socialsupport">Social Support</Link>
-                        <Link to="/humor">Humor</Link>
-                        <Link to="/statistics">Statistics</Link>
-                        <Link to="/glossary">Glossary of Terms</Link>
-                    </div>
-                </div>
+                <Link to="/signup">Sign Up</Link>
+                
                 </div>
                 <h1>Log In</h1>
                 <form onSubmit={this.handleSubmit}>

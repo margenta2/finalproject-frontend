@@ -23,6 +23,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            
             <h1>About XRC</h1>
             
         </div>
