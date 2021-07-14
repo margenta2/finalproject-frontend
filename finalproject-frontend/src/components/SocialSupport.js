@@ -24,10 +24,29 @@ const SocialSupport = () => {
                 </div>
             </div>
             <h1>Social Support</h1>
-            <ul>
-                <li>MeetUp</li>
-                <li>Reddit</li>
-                <li>Facebook Support Groups</li>
+            <p>Leaving the JW organization can be a very lonely and isolating experience. Especially if you are suddenly shunned by your family and friends that are still in the group. Here are some resources that can help you connect with new people that understand what you're going through. </p>
+            
+            <ul><h3>MeetUp</h3>
+                <li><a href={"https://www.meetup.com/"}>MeetUp.com</a></li>
+                <li>There are ex-JW groups in most major cities and some offer virtual meetings as well.</li>
+            </ul>
+
+            <ul><h3>Reddit</h3>
+                <li><a href={"https://www.reddit.com/"}>Reddit.com</a></li>
+                <li>The main channel is r/exjw.</li>
+                <li>The ex-JW subreddit is a good place to connect with others with similar experiences.</li>
+            </ul>
+
+            <ul><h3>Facebook Support Groups</h3>
+                <li><a href={"https://www.facebook.com/"}>Facebook.com</a></li>
+                <li>Ex Jehovahs Witnesses Unite</li>
+                <li>Ex JW Open Discussion</li>
+                <li>Watching Watchtower</li>
+                <li>Jehovah's Witnesses Exposed</li>
+            </ul>
+
+            <ul><h3>Volunteering</h3>
+                <li>Choose a cause you are passionate about and look for volunteer opportunities in your community.</li>
             </ul>
         </div>
     )

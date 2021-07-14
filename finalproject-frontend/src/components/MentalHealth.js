@@ -24,6 +24,7 @@ const MentalHealth = () => {
                 </div>
             </div>
             <h1>Mental Health Resources</h1>
+            <p>Getting counseling and mental health help is a critical part of healing after an exit from Jehovah's Witnesses. Here are some resources that can help.</p>
 
             <ul><h3>General Mental Health Resources</h3>
                 <li><a href={"https://www.nimh.nih.gov/health/"}>National Institute of Mental Health</a></li>
