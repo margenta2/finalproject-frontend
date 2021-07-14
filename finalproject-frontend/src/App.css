@@ -3,11 +3,28 @@ body {
   font-family: 'Della Respira', serif;
 }
 
+li {
+  list-style-type: none;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+}
+
+#truth {
+  width: 200px;
+  height: 500px;
+}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+  background-color: #026670;
 }
 
 /* Links inside the navbar */
@@ -34,13 +51,13 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #AC3B61;
 }
 
 /* Dropdown content (hidden by default) */
@@ -63,7 +80,7 @@ body {
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/* Add a background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
