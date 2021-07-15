@@ -253,7 +253,18 @@ div.list-parent {
 .deprogram-list li {
   list-style-type: square;
   text-align: left;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
   
+}
+
+#youtube {
+  width: 200px;
+  object-fit: contain;
 }
 
 #mental-head {
@@ -325,7 +336,11 @@ div.list-parent {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+}
 
+#create-btn:hover {
+  transition: all 1.5s ease-in-out;
+  font-size: 30px;
 }
 
 .one-post {

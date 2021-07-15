@@ -28,13 +28,17 @@ const DeProgram = () => {
                     <p id="deprogram-head">These resources can help you start to reclaim your mind and confirm why leaving the Jehovah's Witnesses is the right decision. </p>
 
                     <div className="list-parent">
-                        <ul className="deprogram-list"><h3>YouTube Channels</h3>
-                            <li>Lloyd Evans</li>
-                            <li>Telltale</li>
-                            <li>Mentally Diseased</li>
-                            <li>ExJW Critical Thinker</li>
-                            <li>Jay the Comedian</li>
-                        </ul>
+                        <div className="youtube">
+                            <ul className="deprogram-list"><h3>YouTube Channels</h3>
+                                <li>Lloyd Evans</li>
+                                <li>Telltale</li>
+                                <li>Mentally Diseased</li>
+                                <li>ExJW Critical Thinker</li>
+                                <li>Jay the Comedian</li>
+                            </ul>
+                            <img src="/images/youtube.png" alt="youtube" id="youtube"/>
+                        </div>
+                        
 
                         <ul className="deprogram-list"><h3>TV Programs</h3>
                             <li><em>Seduced: Inside the NXIVM Cult</em></li>
