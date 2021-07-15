@@ -205,7 +205,7 @@ img {
   color: whitesmoke;
 }
 
-/* Belief Styling */
+/* Resource Page Styling */
 
 .belief-list li {
   margin: 10px;
@@ -237,4 +237,26 @@ img {
   list-style-type: square;
   text-align: left;
   margin: 5px;
+}
+
+#deprogram-head {
+  text-align: center;
+}
+
+div.list-parent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deprogram-list ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.deprogram-list li {
+  list-style-type: square;
+  text-align: left;
+  margin: 0 auto;
 }
