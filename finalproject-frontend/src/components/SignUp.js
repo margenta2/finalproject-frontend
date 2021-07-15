@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 class SignUp extends Component {
@@ -9,7 +9,7 @@ class SignUp extends Component {
             user: {
                 username: "",
                 password: "",
-                email:"",
+                email: "",
                 jwStatus: "",
                 topic: "",
             }
@@ -36,22 +36,32 @@ class SignUp extends Component {
     }
 
     render() {
-        return(
+        return (
             <div>
-                <div  className="navbar">
-                <Link to="/">Home</Link>
-                <Link to="/login">Log In</Link>
-             
+                <div className="navbar">
+                    <Link to="/">Home</Link>
+                    <Link to="/login">Log In</Link>
                 </div>
-                <h2>Sign Up</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} type="text" name="username" placeholder="Enter Username"/>
-                    <input onChange={this.handleChange} type="password" name="password" placeholder="Enter Password"/>
-                    <input onChange={this.handleChange} type="text" name="email" placeholder="Enter Email" />
-                    <input onChange={this.handleChange} type="text" name="jwStatus" placeholder="Enter JW Status" />
-                    <textarea onChange={this.handleChange} rows="5" cols="40" name="topic" placeholder="Enter Topics Here"></textarea>
-                    <input type="submit" value="Sign Up" />
-                </form>
+
+                <div className="signup-body">
+                    <div className="signup-form">
+                        <h2>Sign Up</h2>
+                        <form onSubmit={this.handleSubmit}>
+                            <label>Username: </label><br></br>
+                            <input onChange={this.handleChange} type="text" name="username" placeholder="Enter Username" /> <br></br>
+                            <label>Password: </label><br></br>
+                            <input onChange={this.handleChange} type="password" name="password" placeholder="Enter Password" /><br></br>
+                            <label>Email Address: </label><br></br>
+                            <input onChange={this.handleChange} type="text" name="email" placeholder="Enter Email" /><br></br>
+                            <label>Current Jehovah's Witness Status: </label><br></br>
+                            <input onChange={this.handleChange} type="text" name="jwStatus" placeholder="Enter JW Status" /><br></br>
+                            <label>Topics That Interest You: </label><br></br>
+                            <textarea onChange={this.handleChange} rows="5" cols="40" name="topic" placeholder="Enter Topics Here"></textarea><br></br>
+                            <input type="submit" value="Sign Up" />
+                        </form>
+
+                    </div>
+                </div>
             </div>
         )
     }

@@ -144,4 +144,22 @@ img {
   padding: 10px;
 }
 
+/* Sign Up Styling */
+
+.signup-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fe982a;
+  width: 50%;
+  border: 11px ridge #6bc4a6;
+  text-align: center;
+  padding: 10px;
+}
 
