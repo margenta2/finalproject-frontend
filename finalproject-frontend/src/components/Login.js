@@ -38,19 +38,25 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className="login-page">
                 <div  className="navbar">
                 <Link to="/">Home</Link>
-                <Link to="/signup">Sign Up</Link>
-                
+                <Link to="/signup">Sign Up</Link> 
                 </div>
-                <h1>Log In</h1>
-                <form onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} type="text" name="username" placeholder="Enter Username" />
-                    <input onChange={this.handleChange} type="password" name="password" placeholder="Enter Password" />
-                    <input type="submit" value="Log In" />
 
-                </form>
+                <div className="login-body">
+                    <div className="login-form">
+                        <h1>Log In</h1>
+                        <form onSubmit={this.handleSubmit}>
+                            <label>Username </label>
+                            <input onChange={this.handleChange} type="text" name="username" placeholder="Enter Username" /> <br></br><br></br>
+                            <label>Password </label>
+                            <input onChange={this.handleChange} type="password" name="password" placeholder="Enter Password" />
+                            <input type="submit" value="Log In" />
+                        </form>
+                    </div>
+                </div>
+                
             </div>
         )
     }
