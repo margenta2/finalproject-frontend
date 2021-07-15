@@ -1,5 +1,12 @@
 import React from "react";
 import {Link, Route} from "react-router-dom";
+import BarChart from "./BarChart";
+
+const data = [
+    {year: 1995, missing: 59585},
+    {year: 1996, missing: 121577},
+    {year: 1997, missing: 180759}
+]
 
 const Statistics = () => {
     return (
@@ -23,7 +30,10 @@ const Statistics = () => {
                     </div>
                 </div>
             </div>
-            <h1>Statistics</h1>
+            <div>
+                <h1>Statistics</h1>
+                <BarChart data={data} />
+            </div>
 
         </div>
     )
