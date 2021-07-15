@@ -18,7 +18,6 @@ const Beliefs = () => {
                         <Link to="/mentalhealth">Mental Health</Link>
                         <Link to="/socialsupport">Social Support</Link>
                         <Link to="/humor">Humor</Link>
-                        <Link to="/statistics">Statistics</Link>
                         <Link to="/glossary">Glossary of Terms</Link>
                     </div>
                 </div>

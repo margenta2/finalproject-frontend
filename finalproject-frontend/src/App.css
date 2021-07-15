@@ -253,20 +253,67 @@ div.list-parent {
 .deprogram-list li {
   list-style-type: square;
   text-align: left;
-  margin: 0 auto;
+  
 }
 
 #mental-head {
   text-align: center;
 }
 
-ul.mental-list {
-  display: flex;
-  flex-direction: column;
-}
 
 .mental-list li {
   list-style-type: square;
   text-align: left;
-  /* margin: 0 auto; */
+}
+
+#social-head {
+  text-align: center;
+}
+
+.humor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fe982a;
+  width: 75%;
+  border: 11px ridge #6bc4a6;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.humor-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #003f5a;
+  width: 75%;
+  border: 11px ridge #6bc4a6;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px;
+  color: whitesmoke;
+}
+
+.humor-content a{
+  margin: 5px;
+}
+
+.humor-body {
+  display:flex;
+  justify-content: center;
+}
+
+.humor-img {
+  width: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#glossary-header {
+  text-align: center;
+}
+
+.glossary-content {
+  padding-right: 20px;
 }

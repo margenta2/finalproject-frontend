@@ -18,7 +18,6 @@ const MentalHealth = () => {
                         <Link to="/mentalhealth">Mental Health</Link>
                         <Link to="/socialsupport">Social Support</Link>
                         <Link to="/humor">Humor</Link>
-                        <Link to="/statistics">Statistics</Link>
                         <Link to="/glossary">Glossary of Terms</Link>
                     </div>
                 </div>
@@ -30,7 +29,6 @@ const MentalHealth = () => {
                     <p id="mental-head">Getting counseling and mental health help is a critical part of healing after an exit from Jehovah's Witnesses. Here are some resources that can help.</p>
 
                     <div className="list-parent">
-
                         <ul className="mental-list"><h3>General Mental Health Resources</h3>
                             <li><a href={"https://www.nimh.nih.gov/health/"}>National Institute of Mental Health</a></li>
                             <li><a href={"https://www.mentalhealth.gov/"}>MentalHealth.gov</a></li>
