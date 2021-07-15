@@ -346,3 +346,39 @@ div.list-parent {
   flex-direction: column;
   align-items: center;
 }
+
+.create-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fe982a;
+  width: 50%;
+  border: 11px ridge #6bc4a6;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.onepost-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.onepost-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fe982a;
+  width: 50%;
+  border: 11px ridge #6bc4a6;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+}
