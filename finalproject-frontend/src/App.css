@@ -1,5 +1,5 @@
 body {
-  background-color: #85dcb8;
+  background-color: #20686c;
   font-family: 'Della Respira', serif;
 }
 
@@ -8,7 +8,7 @@ li {
 }
 
 a, a:visited, a:active {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
@@ -20,7 +20,11 @@ img {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #026670;
+  background-color: #bc4f07;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* Links inside the navbar */
@@ -95,13 +99,30 @@ img {
 }
 
 #wordle {
-  width: 600px;
+  width: 500px;
   object-fit: cover;
-  border: 11px ridge #c38d9e;
+  border: 11px ridge #ff8652;
+  margin: 10px;
 }
 
 .home-body {
   text-align: center;
-  background-color: #41b3a3;
-  color: 
+  background-color: #003f5a;
+  color: #fe982a;
+  margin: 10px;
+  padding: 5px;
+  border: 11px ridge #bc4f07;
 }
+
+
+.home-content {
+  text-align: center;
+  background-color: #005236;
+  margin: 10px;
+  width: 70%;
+  border: 11px ridge #6bc4a6;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+
