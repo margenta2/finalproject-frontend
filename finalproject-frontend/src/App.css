@@ -250,13 +250,23 @@ div.list-parent {
   align-items: center;
 }
 
-.deprogram-list ul {
-  display: inline-block;
-  text-align: left;
-}
-
 .deprogram-list li {
   list-style-type: square;
   text-align: left;
   margin: 0 auto;
+}
+
+#mental-head {
+  text-align: center;
+}
+
+ul.mental-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mental-list li {
+  list-style-type: square;
+  text-align: left;
+  /* margin: 0 auto; */
 }
