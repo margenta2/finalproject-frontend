@@ -58,40 +58,45 @@ class UserProfile extends Component {
 
         return (
             <div>
-                <div  className="navbar">
-                <Link to="/">Home</Link>
-                <Link to="/posts">Message Board</Link>
-                <div className="dropdown">
-                    <button className="dropbtn">Menu
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <Link to="/about">About</Link>
-                        <Link to="/beliefs">Beliefs</Link>
-                        <Link to="/deprogram">De-Programming</Link>
-                        <Link to="/mentalhealth">Mental Health</Link>
-                        <Link to="/socialsupport">Social Support</Link>
-                        <Link to="/humor">Humor</Link>
-                        <Link to="/statistics">Statistics</Link>
-                        <Link to="/glossary">Glossary of Terms</Link>
+                <div className="navbar">
+                    <Link to="/">Home</Link>
+                    <Link to="/posts">Message Board</Link>
+                    <div className="dropdown">
+                        <button className="dropbtn">Menu
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <Link to="/about">About</Link>
+                            <Link to="/beliefs">Beliefs</Link>
+                            <Link to="/deprogram">De-Programming</Link>
+                            <Link to="/mentalhealth">Mental Health</Link>
+                            <Link to="/socialsupport">Social Support</Link>
+                            <Link to="/humor">Humor</Link>
+                            <Link to="/statistics">Statistics</Link>
+                            <Link to="/glossary">Glossary of Terms</Link>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <h1>Profile</h1>
-                <form>
-                    <h2>Username: {user.username}</h2>
-                    <h2>Password: {user.password}</h2>
-                    <h2>Email: {user.email}</h2>
-                    <h2>JW Status: {user.jwStatus}</h2>
-                    <h2>Topic to Discuss: {user.topic}</h2>
-                </form>
-                <div>
-                    <EditProfile
-                    user={this.state.user}
-                    handleChange={this.handleChange}
-                    handleSubmit={this.handleSubmit}
-                    handleDelete={this.handleDelete}
-                    />
+
+                <div className="profile-body">
+                    <div className="profile-content">
+                        <h1>Profile</h1>
+                        <form>
+                            <h2>Username: {user.username}</h2>
+                            <h2>Password: {user.password}</h2>
+                            <h2>Email: {user.email}</h2>
+                            <h2>JW Status: {user.jwStatus}</h2>
+                            <h2>Topic to Discuss: {user.topic}</h2>
+                        </form>
+                    </div>
+                    <div className="profile-edit">
+                        <EditProfile
+                            user={this.state.user}
+                            handleChange={this.handleChange}
+                            handleSubmit={this.handleSubmit}
+                            handleDelete={this.handleDelete}
+                        />
+                    </div>
                 </div>
             </div>
         )
