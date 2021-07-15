@@ -25,38 +25,43 @@ class PostBoard extends Component {
         console.log(this.state.posts)
         return (
             <div>
-                <div  className="navbar">
-                <Link to="/">Home</Link>
-                <Link to="/posts">Message Board</Link>
-                <div className="dropdown">
-                    <button className="dropbtn">Menu
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <Link to="/about">About</Link>
-                        <Link to="/beliefs">Beliefs</Link>
-                        <Link to="/deprogram">De-Programming</Link>
-                        <Link to="/mentalhealth">Mental Health</Link>
-                        <Link to="/socialsupport">Social Support</Link>
-                        <Link to="/humor">Humor</Link>
-                        <Link to="/glossary">Glossary of Terms</Link>
+                <div className="navbar">
+                    <Link to="/">Home</Link>
+                    <Link to="/posts">Message Board</Link>
+                    <div className="dropdown">
+                        <button className="dropbtn">Menu
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <Link to="/about">About</Link>
+                            <Link to="/beliefs">Beliefs</Link>
+                            <Link to="/deprogram">De-Programming</Link>
+                            <Link to="/mentalhealth">Mental Health</Link>
+                            <Link to="/socialsupport">Social Support</Link>
+                            <Link to="/humor">Humor</Link>
+                            <Link to="/glossary">Glossary of Terms</Link>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <h1>Message Board</h1>
-                <Link to={`posts/create`}>Create New Post</Link>
-                {this.state.posts.map(post => {
-                    return (
-                        <div>
-                            <Link to={`/posts/post/${post.id}`}>
+                <div className="main-body">
+                    <div className="content post-container">
+                        <h1>Message Board</h1>
+                        <Link to={`posts/create`} id="create-btn">Create New Post</Link>
+                        {this.state.posts.map(post => {
+                            return (
                                 <div>
-                                    <h4>{post.subject}</h4>
-                                    <p>{post.content}</p>
+                                    <Link to={`/posts/post/${post.id}`}>
+                                        <div className="one-post">
+                                            <h4>{post.subject}</h4>
+                                            <p>{post.content}</p>
+                                        </div>
+                                    </Link>
                                 </div>
-                            </Link>
-                        </div>
-                    )
-                })}
+                            )
+                        })}
+
+                    </div>
+                </div>
             </div>
         )
     }
