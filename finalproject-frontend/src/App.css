@@ -211,6 +211,16 @@ img {
   margin: 10px;
 }
 
+.belief-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#belief-header {
+  text-align: center;
+}
+
 .main-body {
   display: flex;
   flex-direction: column;
