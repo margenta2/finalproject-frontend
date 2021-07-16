@@ -27,7 +27,6 @@ class CreatePost extends Component {
 
         axios.post('http://localhost:3001/posts/create', this.state.post)
             .then(response => {
-                console.log(response)
                 this.props.history.push(`/posts`)
             })
     }

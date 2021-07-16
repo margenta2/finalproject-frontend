@@ -27,7 +27,6 @@ class Login extends Component {
 
         axios.post("http://localhost:3001/users/login", this.state.user)
             .then(response => {
-                console.log(response)
                 this.props.history.push(`/profile/${response.data.id}`)
             })
             .catch(err => {

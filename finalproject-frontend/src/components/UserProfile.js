@@ -41,14 +41,13 @@ class UserProfile extends Component {
         event.preventDefault()
 
         axios.put(`http://localhost:3001/users/profile/${this.props.match.params.id}`,this.state.user)
-            .then(response => 
-                console.log("Making Changes"))
-    }
+            .then(response => {
+            })
+        }
 
     handleDelete = async (event) => {
         await axios.delete(`http://localhost:3001/users/profile/${this.props.match.params.id}`)
             .then(response => {
-                console.log("deleting user")
                 this.props.history.push('/')
             })
     }

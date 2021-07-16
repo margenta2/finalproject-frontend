@@ -16,11 +16,11 @@ class OnePost extends Component {
 
     componentDidMount = () => {
         axios.get(`http://localhost:3001/posts/${this.props.match.params.id}`)
-        .then(response => {
-            this.setState({
-                post: response.data
+            .then(response => {
+                this.setState({
+                    post: response.data
+                })
             })
-        })
     }
 
     handleChange = (event) => {
@@ -35,21 +35,19 @@ class OnePost extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
 
-        axios.put(`http://localhost:3001/posts/${this.props.match.params.id}`,this.state.post)
-        .then(response => {
-            this.props.history.push(`/posts`)
-            console.log("editing")
-        })
+        axios.put(`http://localhost:3001/posts/${this.props.match.params.id}`, this.state.post)
+            .then(response => {
+                this.props.history.push(`/posts`)
+            })
     }
 
     handleDelete = (event) => {
         event.preventDefault()
 
         axios.delete(`http://localhost:3001/posts/${this.props.match.params.id}`)
-        .then(() => {
-            console.log("deleting post");
-            this.props.history.push(`/posts`)
-        })
+            .then(() => {
+                this.props.history.push(`/posts`)
+            })
     }
 
     render() {
