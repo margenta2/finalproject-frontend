@@ -41,11 +41,11 @@ class OnePost extends Component {
             })
     }
 
-    handleDelete = (event) => {
+    handleDelete = async (event) => {
         event.preventDefault()
 
-        axios.delete(`http://localhost:3001/posts/${this.props.match.params.id}`)
-            .then(() => {
+        await axios.delete(`http://localhost:3001/posts/${this.props.match.params.id}`)
+            .then(response => {
                 this.props.history.push(`/posts`)
             })
     }
