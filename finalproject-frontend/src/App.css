@@ -267,6 +267,28 @@ div.list-parent {
   object-fit: contain;
 }
 
+.tv {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 150px;
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#lloyd {
+  width: 200px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+
+.deprogram-parent {
+  margin: 10px auto;
+}
+
 #mental-head {
   text-align: center;
 }
