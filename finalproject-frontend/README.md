@@ -58,9 +58,13 @@ This is a resource center for anyone who wants to explore the ex-Jehovah's Witne
 * [Images in Public Folder](https://stackoverflow.com/questions/47196800/reactjs-and-images-in-public-folder)
 * Wordle.net
 * JW Sources
-- jwwatch.org
-- jwfacts.com
-- [](https://www.britannica.com/topic/Jehovahs-Witnesses)
+  - jwwatch.org
+  - jwfacts.com
+  - [Britannica.com](https://www.britannica.com/topic/Jehovahs-Witnesses)
+  - Wikipedia.org
+  - [Cult Article](https://www.tennessean.com/story/news/religion/2016/09/15/what-makes-cult-cult/90377532/)
+* Colorpalettes.net
+* [Border Generator](https://html-css-js.com/css/generator/border-outline/)
 * Google Font - Della Respira
 
 ### Wireframe/ERD
