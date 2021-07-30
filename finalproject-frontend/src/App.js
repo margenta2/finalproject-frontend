@@ -15,6 +15,7 @@ import DeProgram from './components/DeProgram';
 import Glossary from './components/Glossary';
 import Humor from './components/Humor';
 import About from './components/About';
+import SocialFollow from './components/SocialFollow';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
       <Route path="/mentalhealth" render={() => <MentalHealth /> } />
       <Route path="/socialsupport" render={() => <SocialSupport /> } />
       <Route path="/about" render={() => <About /> } />
-      
+      <SocialFollow />
     </div>
   );
 }
