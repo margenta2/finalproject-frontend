@@ -37,12 +37,14 @@ const Humor = () => {
                         <a href={"https://www.youtube.com/watch?v=JizXyahDZkM"}>Elder Training</a>
                     </div>
 
-                    <img src="/images/truth.jpg" alt="truthmeme" className="humor-img" />
-                    <img src="/images/armageddon.jpg" alt="armageddon" className="humor-img"/>
-                    <img src="/images/firstbirthday.png" alt="birthday" className="humor-img"/>
-                    <img src="/images/jworigin.png" alt="jworigin" className="humor-img"/>
-                    <img src="/images/prophfail.jpg" alt="prophecy fail" className="humor-img" />
-                    <img src="/images/shunning.jpg" alt="shunning" className="humor-img" />
+                    <div className="all-humor-images">
+                        <img src="/images/truth.jpg" alt="truthmeme" className="humor-img" />
+                        <img src="/images/armageddon.jpg" alt="armageddon" className="humor-img"/>
+                        <img src="/images/firstbirthday.png" alt="birthday" className="humor-img"/>
+                        <img src="/images/jworigin.png" alt="jworigin" className="humor-img"/>
+                        <img src="/images/prophfail.jpg" alt="prophecy fail" className="humor-img" />
+                        <img src="/images/shunning.jpg" alt="shunning" className="humor-img" />
+                    </div>
 
                 </div>
 
